@@ -1,0 +1,83 @@
+﻿@page
+@model NutriSpace.Pages.TestimonialsModel
+@{
+    ViewData["Title"] = "Testimonials page";
+}
+
+<!-- Nav-->
+<div class="container-fluid p-0 nav-bar">
+    <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+        <a href="index.html" class="navbar-brand px-lg-4 m-0">
+            <h1 class="m-0 display-4 text-uppercase text-white">NUTRISPACE</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto p-4">
+                <a asp-page="/Index" class="nav-item nav-link">HOME</a>
+                <a asp-page="/Recipes" class="nav-item nav-link">RECIPES</a>
+                <a asp-page="/Testimonials" class="nav-item nav-link active">TESTIMONIALS</a>
+                <a asp-page="/Contact" class="nav-item nav-link">CONTACT</a>
+                <a asp-page="/Index" class="nav-item nav-link">REGISTER</a>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+    <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+        <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Testimonial</h1>
+    </div>
+</div>
+
+<!-- Testimonials-->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
+            <h1 class="display-4">Our Clients Say</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid" src="img/testimonial-1.jpg">
+                    <div class="ml-3">
+                        <h4>Ana Luiza Veizaga</h4>
+                        <i>30 years old</i>
+                    </div>
+                </div>
+                <p class="m-0">“Fish tacos have improved my cardiovascular health. Fish is an excellent source of omega-3, which helps reduce inflammation and improve heart health.”</p>
+            </div>
+            <div class="testimonial-item">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid" src="img/testimonial-2.jpg">
+                    <div class="ml-3">
+                        <h4>Carlos Aguire Peña</h4>
+                        <i>35 años year old</i>
+                    </div>
+                </div>
+                <p class="m-0">“This breakfast(Oatmeal with Fruits and Nuts) has helped me maintain stable energy levels throughout the morning. The combination of oatmeal and fresh fruits provides the necessary carbs and vitamins for my workouts.”</p>
+            </div>
+            <div class="testimonial-item">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid" src="img/testimonial-3.jpg">
+                    <div class="ml-3">
+                        <h4>María Gomez Antuna</h4>
+                        <i>42 years old</i>
+                    </div>
+                </div>
+                <p class="m-0"> “Lentil soup has been excellent for my cardiovascular health. Lentils are a great source of protein and fiber, helping to reduce cholesterol.”</p>
+            </div>
+            <div class="testimonial-item">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid" src="img/testimonial-4.jpg">
+                    <div class="ml-3">
+                        <h4>David Guzman Lona</h4>
+                        <i>28 years old</i>
+                    </div>
+                </div>
+                <p class="m-0">“Oat and banana pancakes are perfect for keeping my blood sugar levels stable. Oats are an excellent source of complex carbohydrates.”</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,193 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+<header>
+    <!-- Navbar-->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">NUTRISPACE</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a asp-page="/Index" class="nav-item nav-link active">HOME</a>
+                    <a asp-page="/Recipes" class="nav-item nav-link">RECIPES</a>
+                    <a asp-page="/Testimonials" class="nav-item nav-link">TESTIMONIALS</a>
+                    <a asp-page="/Contact" class="nav-item nav-link">CONTACT</a>
+                    <a asp-page="/Index" class="nav-item nav-link">REGISTER</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Carousel -->
+<div class="container-fluid p-0 mb-5">
+    <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="img/DesayunoCarrusel.jpg" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="text-primary font-weight-medium m-0">Start your day right</h2>
+                    <h1 class="display-1 text-white m-0">“Energy”</h1>
+                    <h2 class="text-white m-0">* LIFE *</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="img/AlmuerzoCarrusel.jpeg" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="text-primary font-weight-medium m-0">Recharge with a balanced meal</h2>
+                    <h1 class="display-1 text-white m-0">Vitality</h1>
+                    <h2 class="text-white m-0">* LIFE *</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="img/CenaCarrusel.jpg" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="text-primary font-weight-medium m-0">End your day with a light dinner</h2>
+                    <h1 class="display-1 text-white m-0">Relaxation</h1>
+                    <h2 class="text-white m-0">* LIFE *</h2>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+
+<!-- About -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h4>
+            <h1 class="display-4">Our Story Begins</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 py-0 py-lg-5">
+                <h1 class="mb-3">Initiative</h1>
+                <h5 class="mb-3">We are NutriSpace </h5>
+                <p>a place where we are dedicated to providing delicious recipes and practical advice to improve the quality of life of our people. Our team is made up of nutrition experts, passionate chefs and health enthusiasts, all committed to the mission of making healthy eating accessible and enjoyable for everyone.</p>
+                <a href="" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Learn More</a>
+            </div>
+            <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="img/file.png" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-4 py-0 py-lg-5">
+                <h1 class="mb-3">Our Vision</h1>
+                <p>Our vision is to create a strong community that has access to the information and resources necessary to live a healthy and balanced life. In addition to providing information, we project ourselves to want to solve health problems by wanting to create a business.</p>
+                <h5 class="mb-3">
+                <i class="fa fa-check text-primary mr-3"></i>Reliable information</h5>
+                <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Mutual support</h5>           
+                <a href="" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Know Eat-->
+<div class="container-fluid pt-5">
+    <h1 class="display-4 text-center">
+        The Importance Of How To Eat
+    </h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <img class="img-fluid w-50 mx-auto d-block mb-3" src="img/text.png" alt="Image">
+            <p class="text-left">A healthy diet helps maintain good health and prevent non-communicable diseases such as diabetes, heart disease, stroke, and cancer.</p>
+            <p class="text-left">We share some practical tips to help you achieve good nutrition.</p>
+            <p class="text-left">
+                <strong>Fruits, vegetables, and greens.</strong><br>
+                Consuming at least 400 grams or five servings of fruits and vegetables a day reduces the likelihood of developing non-communicable diseases. It is recommended to include them in all meals.
+            </p>
+            <p class="text-left">
+                <strong>Fats.</strong><br>
+                Reducing total fat intake to less than 30% of daily caloric intake helps prevent unhealthy weight gain. It is recommended to steam or boil food. Limit the consumption of baked or fried foods, as well as snacks and packaged foods.
+            </p>
+            <p class="text-left">
+                <strong>Salt, sodium, and potassium.</strong><br>
+                High salt intake and insufficient potassium intake contribute to high blood pressure, which in turn increases the likelihood of developing coronary heart disease and stroke. We recommend reducing salt intake to less than 5 grams per day.
+            </p>
+            <p class="text-left">
+                <strong>Sugars.</strong><br>
+                For adults and children, the recommendation is to reduce the intake of free sugars to less than 10% of total caloric intake; a reduction to less than 5% provides additional health benefits such as reducing the risk factors for cardiovascular diseases.
+            </p>
+            <p class="text-left">At our Nutrition & Obesity Center, we help you achieve your goal of leading a healthier lifestyle through tailored plans to help you look and feel better.</p>
+            <p class="text-left">We provide personalized attention to:</p>
+            <ul class="text-left">
+                <li>Achieve a healthy lifestyle.</li>
+                <li>Control your weight.</li>
+                <li>Change your body composition.</li>
+                <li>Prevent and manage associated diseases.</li>
+                <li>Improve physical and sports performance.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Services -->
+<div class="container-fluid pt-5">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Services</h4>
+            <h1 class="display-4">
+                Organize With Us
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-sm-5">
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/Consult.jpg" alt="">
+                    </div>
+                    <div class="col-sm-7">
+                        <h4>
+                            <i class="fa-sharp fa-light fa-file-magnifying-glass"></i>
+                            Nutritional Consultations
+                        </h4>
+                        <p class="m-0">
+                            Consult with our certified nutritionists who can advise you on how to improve your diet and eating habits.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-sm-5">
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/Workspace.jpg" alt="">
+                    </div>
+                    <div class="col-sm-7">
+                        <h4>
+                            <i class="fa-sharp fa-light fa-file-magnifying-glass"></i>
+                            Workshops and Webinars
+                        </h4>
+                        <p class="m-0">
+                            We organize workshops and webinars on specific nutrition topics, such as meal planning and the vision we have for creating the business.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

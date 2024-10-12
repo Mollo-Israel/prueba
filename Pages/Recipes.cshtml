@@ -1,0 +1,315 @@
+﻿@page
+@model NutriSpace.Pages.RecipesModel
+@{
+    ViewData["Title"] = "Recipes page";
+}
+<!-- Nav -->
+<div class="container-fluid p-0 nav-bar">
+    <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+        <a href="index.html" class="navbar-brand px-lg-4 m-0">
+            <h1 class="m-0 display-4 text-uppercase text-white">NUTRISPACE</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto p-4">
+                <a asp-page="/Index" class="nav-item nav-link">HOME</a>
+                <a asp-page="/Recipes" class="nav-item nav-link active">RECIPES</a>
+                <a asp-page="/Testimonials" class="nav-item nav-link">TESTIMONIALS</a>
+                <a asp-page="/Contact" class="nav-item nav-link">CONTACT</a>
+                <a asp-page="/Index" class="nav-item nav-link">REGISTER</a>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+    <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+        <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">RECIPES</h1>
+    </div>
+</div>
+
+<!-- Breakfast -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Mornings</h4>
+            <h1 class="display-4">
+                Breakfasts
+            </h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Breakfast/1_Bre.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Oatmeal with Fruits</h4>
+                        <p class="m-0">Oatmeal cooked with milk or water, accompanied by fresh fruits (such as banana, strawberries, or blueberries) and a handful of nuts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Breakfast/2_Bre.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-coffee service-icon"></i>Avocado Toast</h4>
+                        <p class="m-0">Whole grain toast with mashed avocado, a bit of salt, pepper, and a squeeze of lemon.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Breakfast/3_Bre.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Green Smoothie</h4>
+                        <p class="m-0">Spinach, banana, apple, Greek yogurt, and a bit of water or plant-based milk, all blended together.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Breakfast/4_Bre.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Yogurt with Granola and Honey</h4>
+                        <p class="m-0">Natural yogurt with homemade granola and a drizzle of honey.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Breakfast/5_Bre.png">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa fa-table service-icon"></i>Scrambled Eggs with Spinach and Tomato</h4>
+                        <p class="m-0">Scrambled eggs with fresh spinach and cherry tomatoes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Breakfast/6_Bre.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Oat and Banana Pancakes</h4>
+                        <p class="m-0">Pancakes made with ground oats, banana, and egg.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Breakfast/7_Bre.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Yogurt and Fruit Parfait</h4>
+                        <p class="m-0">Layers of Greek yogurt, fresh fruits, and granola.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Breakfast/8_Bre.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Breakfast Tacos with Vegetables</h4>
+                        <p class="m-0">Corn tortillas filled with scrambled eggs, bell peppers, onions, and spinach.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+<!-- Lunch -->
+     <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+            <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Afternoon</h4>
+            <h1 class="display-4">
+                Lunch
+            </h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Lunch/4_Lu.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Quinoa and Vegetable Salad</h4>
+                        <p class="m-0">Cooked quinoa with a mix of fresh vegetables like cucumber, tomato, bell pepper, and avocado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Lunch/2_Lu.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-coffee service-icon"></i>Chicken and Vegetable Wrap</h4>
+                        <p class="m-0">Whole grain tortilla filled with grilled chicken, lettuce, tomato, shredded carrot, and a bit of hummus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Lunch/3_Lu.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Lentil Soup</h4>
+                        <p class="m-0">Lentils cooked with carrot, celery, onion, and spices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Lunch/1_Lu.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Buddha Bowl</h4>
+                        <p class="m-0">Brown rice, chickpeas, spinach, shredded carrots, avocado, and a tahini sauce.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Lunch/7_Lu.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Chickpea and Tuna Salad</h4>
+                        <p class="m-0">Cooked chickpeas, canned tuna, red onion, parsley, and a lemon and olive oil dressing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Lunch/6_Lu.png" >
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Whole Wheat Pasta with Vegetables</h4>
+                        <p class="m-0">Whole wheat pasta with a mix of sautéed vegetables like broccoli, bell peppers, and mushrooms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Lunch/5_Lu.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Turkey and Avocado Sandwich</h4>
+                        <p class="m-0">Whole grain bread with turkey, avocado, lettuce, and tomato.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/Lunch/8_Lu.png">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Fish Tacos</h4>
+                        <p class="m-0">Corn tortillas with grilled fish, shredded cabbage, and a yogurt and lime sauce.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    <!-- Dinner -->
+    </div> <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Nigths</h4>
+            <h1 class="display-4">
+                Dinner
+            </h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/DinnerP/1_D.png" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Baked Salmon with Asparagus</h4>
+                        <p class="m-0">Baked salmon fillet with asparagus and a bit of lemon.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/DinnerP/2_D.png" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-coffee service-icon"></i>Grilled Chicken with Roasted Vegetables</h4>
+                        <p class="m-0">Grilled chicken breast with a mix of roasted vegetables like zucchini, bell peppers, and onion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/DinnerP/3_D.png" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Spinach and Strawberry Salad</h4>
+                        <p class="m-0">Fresh spinach with strawberries, nuts, and a balsamic vinaigrette.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/DinnerP/4_D.png" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Shrimp Tacos</h4>
+                        <p class="m-0"> Corn tortillas with grilled shrimp, shredded cabbage, and an avocado sauce.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/DinnerP/5_D.png" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Tomato and Basil Soup</h4>
+                        <p class="m-0">Homemade tomato soup with fresh basil and a bit of Parmesan cheese.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                        <img class="scaled-img img-fluid mb-3 mb-sm-0" src="/img/DinnerP/6_D.png" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Vegetable Frittata</h4>
+                        <p class="m-0">Beaten eggs with a mix of vegetables like spinach, mushrooms, and bell peppers, baked in the oven.</p>
+                        </div>
+                    </div>
+                </div>         
+            </div>
+        </div>
+    </div>
